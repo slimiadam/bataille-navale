@@ -10,6 +10,9 @@ public class Board {
         if (size<0){
             size=-size;
         }
+        if (size>100){
+            size=size%100;
+        }
         this._ships = new char [size][size];
         this._strikes = new boolean [size][size];
     }
